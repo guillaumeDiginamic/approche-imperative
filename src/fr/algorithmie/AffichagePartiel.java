@@ -26,7 +26,7 @@ public class AffichagePartiel {
             }
         }
         // Combiner une boucle et un test de manière à n’afficher que les entiers impairs
-        System.out.println("Affichage des entiers pairs");
+        System.out.println("Affichage des entiers impairs");
         for (int i = 0; i < array.length; i++) {
             if (array[i] %2 == 1) {
                 System.out.println(array[i]);
