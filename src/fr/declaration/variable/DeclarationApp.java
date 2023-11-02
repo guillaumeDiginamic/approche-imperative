@@ -11,10 +11,12 @@ public class DeclarationApp {
         char charA = 'E';
         boolean booleanA = true;
         String stringA = "string";
+        int a =053;
 
         System.out.printf("byteA="+byteA+" shortA =" +shortA+" intA ="+intA+ " longA = "+longA+"\n");
         System.out.printf("floatA="+floatA+" doubleA =" +doubleA+" charA ="+charA+"\n");
         System.out.printf(" booleanA = "+booleanA+" stringA = "+stringA);
+        System.out.printf(" a = "+a+"\n");
 
         String randomString = "Voici le résultat d’un calcul : 1+5=6";
         System.out.println(randomString+"\n");
