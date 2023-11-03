@@ -67,6 +67,7 @@ public class FabriquerMur {
             nbBriqueSmall = longueur / longueurBriqueSmall; // nombre de petites briques necessaires
             resteSmall = longueur % longueurBriqueSmall; // reste aprés utilisation des petites briques
             if (resteSmall == 0 && nbBriqueSmall <= nbSmall) {
+                // longueur atteinte et nombre de petites briques suffisantes
                 count++;
                 System.out.println("   combinaison possible "+count+" : " + nbBriqueSmall + " petite(s) brique(s) pour la longueur de " + longueur);                        }
             }
