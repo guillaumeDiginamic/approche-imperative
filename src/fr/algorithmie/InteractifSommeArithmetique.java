@@ -6,7 +6,7 @@ public class InteractifSommeArithmetique {
         // demande un nombre à l’utilisateur puis calcule la somme de tous les entiers compris entre 1 et ce nombre
         int nb = 0;
         int somme = 0;
-        System.out.println("entrer un nombre : ");
+        System.out.println("entrer un nombre supèrieur à 0 : ");
         Scanner scanner = new Scanner(System.in) ;
         nb = scanner.nextInt() ;
 

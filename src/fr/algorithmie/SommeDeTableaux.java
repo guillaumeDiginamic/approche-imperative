@@ -9,7 +9,7 @@ public class SommeDeTableaux {
         int[] result = new int[size];
 
         // Créer un tableau qui contient la somme des 2 précédents tableaux
-        for (var i = 0; i < size; i++) {
+        for (int i = 0; i < size; i++) {
             result[i] = array1[i]+array2[i];
         }
         System.out.println("somme des 2 tableaux");

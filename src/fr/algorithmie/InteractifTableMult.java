@@ -5,9 +5,10 @@ public class InteractifTableMult {
     public static void main(String[] args) {
         // demande un nombre à l’utilisateur qui doit être obligatoirement compris entre 1 et 10
         int nb = 0;
+        Scanner scanner = new Scanner(System.in) ;
+
         while ( nb>10 || nb <1) {
             System.out.println("entrer un nombre compris entre 1 et 10 : ");
-            Scanner scanner = new Scanner(System.in) ;
             nb = scanner.nextInt() ;
         }
         // affiche la table de multiplication de ce nombre

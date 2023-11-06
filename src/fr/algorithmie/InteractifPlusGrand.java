@@ -3,12 +3,12 @@ import java.util.Scanner;
 
 public class InteractifPlusGrand {
     public static void main(String[] args) {
-        // demande 10 nombres à un utilisateur et qui affiche le plus grand de ces nombres
+        // demande 10 nombres à un utilisateur et affiche le plus grand de ces nombres
         int[] nb = new int[10];
+        Scanner scanner = new Scanner(System.in) ;
 
         for (int i=0; i< nb.length; i++) {
-            System.out.println("entrer un nombre : ");
-            Scanner scanner = new Scanner(System.in) ;
+            System.out.print("entrer un nombre : ");
             nb[i] = scanner.nextInt() ;
         }
         // affiche le plus grand de ces nombres
