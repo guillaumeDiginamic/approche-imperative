@@ -9,25 +9,40 @@ public class InteractifStockageNombre {
 
         int option;
         int count = 0;
-        int[] nb = new int[100];
+        int size = 10;
+        int plusSize = size;
+        int[] nb = new int[size];
         Scanner scanner = new Scanner(System.in);
         do {
             System.out.println("Menu \n 1. Ajouter un nombre\n 2. Afficher les nombres existants. ");
 
             option = scanner.nextInt();
-            if (option == 1) {
-                // demande un nombre à l’utilisateur puis l’ajoute à un tableau
-                System.out.println("entrer un nombre : ");
+            switch (option) {
+                case 1:
+                    // Ajouter un nombre
+                    if (count >= size) {
+                        // Si le tableau est plein, on l'agrandit
+                        int[] tmp = new int[size +plusSize];
 
-                nb[count] = scanner.nextInt() ;
-                count++;
-            } else {
-                // affiche le contenu du tableau
-                for (int i = 0; i < count; i++) {
-                    System.out.println(nb[i]);
-                }
+                        for (int i = 0; i < size; i++) {
+                            tmp[i] = nb[i];
+                        }
+                        size = tmp.length;
+                        nb =tmp;
+                    }
+                    // demande un nombre à l’utilisateur puis l’ajoute à un tableau
+                    System.out.print("entrer un nombre : ");
 
+                    nb[count] = scanner.nextInt() ;
+                    count++;
+                    break;
+                case 2:
+                    // Afficher les nombres existants
+                    for (int i = 0; i < count; i++) {
+                        System.out.println(nb[i]);
+                    }
+                    break;
             }
-        } while (count< nb.length);
+        } while (option!=2);
     }
 }
